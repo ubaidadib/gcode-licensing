@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GCode Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; padding: 24px; }
+      .card { border: 1px solid #eee; border-radius: 12px; padding: 16px; max-width: 720px; }
+      code { background: #f7f7f7; padding: 2px 6px; border-radius: 6px; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>GCode Admin</h2>
+      <p>Use Postman or curl to manage licenses.</p>
+      <ul>
+        <li><code>POST /license/create</code> admin only</li>
+        <li><code>POST /license/validate</code></li>
+        <li><code>POST /license/revoke</code> admin only</li>
+        <li><code>POST /paddle/webhook</code> signed</li>
+        <li><code>POST /tv/alert</code> secret protected</li>
+      </ul>
+    </div>
+  </body>
+</html>
